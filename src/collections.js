@@ -1,4 +1,5 @@
-import {isNil, isArray, isObject, isFunction, every} from 'lodash'
+import pkg from 'lodash'
+const {isNil, isArray, isObject, isFunction, every} = pkg
 export const ValidatorTypes = {
   object: 1,
   collectionOfValues: 2,

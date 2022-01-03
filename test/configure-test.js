@@ -1,5 +1,5 @@
-import {expect} from 'chai'
-import {createConfig, defaultConfig} from '../src/common'
+import { expect } from 'chai'
+import { createConfig, defaultConfig } from '../src/common.js'
 
 describe('createConfig', function () {
   it('throws when given invalid keys', function () {

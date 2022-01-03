@@ -9,28 +9,19 @@ export {
   isLtField,
   isLteToField,
   withinRange
-} from './numbers-validators'
+} from './numbers-validators.js'
 
 export {
   required,
   requiredIfOtherFieldIsTrue,
   requiredIfOtherFieldIsFalse,
   requiredIfOtherFieldEquals
-} from './required-validators'
+} from './required-validators.js'
 
-export {
-  createConfig,
-  noTrim
-} from './common'
+export {createConfig, noTrim} from './common.js'
 
-export {
-  minLength,
-  maxLength,
-  isEmail
-} from './strings-validators'
+export {minLength, maxLength, isEmail} from './strings-validators.js'
 
-export {collection} from './collections'
+export {collection} from './collections.js'
 
-export {
-  validate
-} from './validate'
+export {validate} from './validate.js'

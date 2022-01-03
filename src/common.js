@@ -1,4 +1,5 @@
-import {get, trim, isArray, isString, keys, filter} from 'lodash'
+import pkg from 'lodash'
+const {get, trim, isArray, isString, keys, filter} = pkg
 
 export const Errors = {
   required: 'sapin.required',

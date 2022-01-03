@@ -1,11 +1,11 @@
-import {expect} from 'chai'
-import {Errors} from '../src/common'
+import { expect } from 'chai'
+import { Errors } from '../src/common.js'
 import {
   CommonTestConfiguration as config,
   testThatValidatorDoesNotReturnAnErrorWhenFieldIdEmpty,
   testThatValidatorDoesNotReturnAnErrorWhenOtherFieldIsEmpty,
   testThatValidatorHandlesValidAndInvalidValue
-} from './common-test-cases'
+} from './common-test-cases.js'
 import {
   isNumber,
   isInteger,
@@ -17,7 +17,7 @@ import {
   isLtField,
   isLteToField,
   withinRange
-} from '../src/numbers-validators'
+} from '../src/numbers-validators.js'
 
 describe('isNumber', function () {
   testThatValidatorDoesNotReturnAnErrorWhenFieldIdEmpty(isNumber)

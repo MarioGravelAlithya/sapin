@@ -1,5 +1,6 @@
-import {get, isArray} from 'lodash'
-import {Errors} from './common'
+import pkg from 'lodash'
+import {Errors} from './common.js'
+const {get, isArray} = pkg
 
 // required validators
 export const required = ({value, config}) => {

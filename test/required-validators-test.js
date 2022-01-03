@@ -1,14 +1,12 @@
-import {expect} from 'chai'
-import {Errors} from '../src/common'
-import {
-  CommonTestConfiguration as config
-} from './common-test-cases'
+import { expect } from 'chai'
+import { Errors } from '../src/common.js'
+import { CommonTestConfiguration as config } from './common-test-cases.js'
 import {
   required,
   requiredIfOtherFieldIsTrue,
   requiredIfOtherFieldIsFalse,
   requiredIfOtherFieldEquals
-} from '../src/required-validators'
+} from '../src/required-validators.js'
 
 describe('required', function () {
   it('returns Errors.required when given null value', function () {

@@ -6,5 +6,11 @@
   "globals": {
     "Image": true,
     "URL": true
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "object-curly-spacing": ["error", "never"],
+    "prefer-const": ["off"]
   }
 }

@@ -1,6 +1,7 @@
-import {expect} from 'chai'
-import {forEach} from 'lodash'
-import {Errors, defaultConfig} from '../src/common'
+import { expect } from 'chai'
+import pkg from 'lodash'
+const { forEach } = pkg;
+import { Errors, defaultConfig } from '../src/common.js'
 
 const generateAlteredErrors = () => {
   const newErrors = {}

@@ -1,8 +1,5 @@
-import {expect} from 'chai'
-import {
-  collection,
-  ValidatorTypes
-} from '../src/collections'
+import { expect } from 'chai';
+import { collection, ValidatorTypes } from '../src/collections.js'
 
 describe('collection', function () {
   it('throws when validator is not an array or object', function () {

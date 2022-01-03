@@ -1,14 +1,10 @@
-import {expect} from 'chai'
-import {Errors} from '../src/common'
+import { expect } from 'chai';
+import { Errors } from '../src/common.js'
 import {
   CommonTestConfiguration as config,
   testThatValidatorDoesNotReturnAnErrorWhenFieldIdEmpty
-} from './common-test-cases'
-import {
-  minLength,
-  maxLength,
-  isEmail
-} from '../src/strings-validators'
+} from './common-test-cases.js'
+import { minLength, maxLength, isEmail } from '../src/strings-validators.js'
 
 describe('minLength', function () {
   testThatValidatorDoesNotReturnAnErrorWhenFieldIdEmpty(minLength(3))

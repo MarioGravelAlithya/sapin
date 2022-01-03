@@ -1,5 +1,6 @@
-import {isNil, get, gt, gte, lt, lte} from 'lodash'
-import {Errors} from './common'
+import pkg from 'lodash'
+import {Errors} from './common.js'
+const {isNil, get, gt, gte, lt, lte} = pkg
 
 export const isNumber = ({value, config}) => {
   if (config.isEmptyValue(value)) return null
@@ -53,14 +54,16 @@ const compareWithOtherField = (value, otherFieldName, otherFieldLabel, siblings,
   let err = null
   const operands = getNumbers(value, otherFieldName, siblings, config)
   if (!isNaN(operands.value) && !isNaN(operands.otherFieldValue)) {
-    err = op(operands.value, operands.otherFieldValue) ? null : {
-      error: errorCode,
-      params: {
-        value,
-        otherFieldValue: operands.otherFieldValue,
-        otherFieldLabel
-      }
-    }
+    err = op(operands.value, operands.otherFieldValue)
+      ? null
+      : {
+          error: errorCode,
+          params: {
+            value,
+            otherFieldValue: operands.otherFieldValue,
+            otherFieldLabel
+          }
+        }
   } else if (operands.value !== undefined && isNaN(operands.value)) {
     err = Errors.isNumber
   }

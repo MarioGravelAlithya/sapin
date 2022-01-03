@@ -1,6 +1,7 @@
-import {isObject, isArray, isFunction, keys, omit} from 'lodash'
-import {defaultConfig} from './common'
-import {ValidatorRunner} from './validatorRunner'
+import pkg from 'lodash'
+import {defaultConfig} from './common.js'
+import {ValidatorRunner} from './validatorRunner.js'
+const {isObject, isArray, isFunction, keys, omit} = pkg
 
 const internalProps = ['__type', '__validator', '__valueValidator']
 

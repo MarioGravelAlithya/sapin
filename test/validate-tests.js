@@ -1,9 +1,10 @@
-import {size} from 'lodash'
-import {expect} from 'chai'
-import {Errors} from '../src/common'
+import pkg from 'lodash'
+const { size } = pkg;
+import { expect } from 'chai'
+import { Errors } from '../src/common.js'
 import {
   isNumber, required, validate, collection, noTrim, createConfig
-} from '../src'
+} from '../src/index.js'
 
 describe('validate', function () {
   const simpleValidator = {

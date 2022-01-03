@@ -1,5 +1,16 @@
-import {setWith, forEach, isArray, assign, isObject, omit, size, isNil, isFunction} from 'lodash'
-import {ValidatorTypes} from './collections'
+import pkg from 'lodash'
+import {ValidatorTypes} from './collections.js'
+const {
+  setWith,
+  forEach,
+  isArray,
+  assign,
+  isObject,
+  omit,
+  size,
+  isNil,
+  isFunction
+} = pkg
 
 export const ValidatorRunner = function (entity, validators, config) {
   this.entity = entity
